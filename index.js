@@ -30,7 +30,6 @@
    */
   function init() {
     document.getElementById("slideshow").addEventListener('click', changeSlideShowImgOnClick);
-    document.getElementById("sad-image").addEventListener('mouseover', onHover);
     let buttons = document.querySelectorAll(".button");
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('mouseenter', onMouseEnter);
