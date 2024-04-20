@@ -3,22 +3,21 @@
   ***
   Ananya Shreya Soni
   March 36th 2024
-  Section AC TAs:
 
   This file represents an about me page that contains information about
   me such as classes that I am currently taking, my favorite things to do,
   etc.
-  ***
 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
     <title>About Me</title>
   </head>
   <body>
-    <section class="banner">
+    <section id="banner">
       <a class="button" href="index.html">About Me</a>
       <a class="button" href="resume.html">Resume</a>
       <a class="button" href="https://www.linkedin.com/in/ananyashreyasoni/" target="_blank">
@@ -26,7 +25,7 @@
       <a class="button" href="https://github.com/ananyasoni" target="_blank">GitHub</a>
       <a class="button" href="https://wonderful.dev/ananyasoni" target="_blank">WonderfulDev</a>
       <a class="button" href="https://www.instagram.com/ananya.soni1027/" target="_blank">Instagram</a>
-      <a id="wakatime" href="https://wakatime.com/@ananyasoni" target="_blank"><img src="https://wakatime.com/badge/user/018d09cd-583e-4baa-83db-e641cdd223d7.svg" alt="Total time coded since Jan 14 2024"></a>
+      <a id="wakatime" href="https://wakatime.com/@ananyasoni" target="_blank"><img id="waka" src="https://wakatime.com/badge/user/018d09cd-583e-4baa-83db-e641cdd223d7.svg" alt="Total time coded since Jan 14 2024"></a>
     </section>
     <header>
       <h1 class="page-title">About Me</h1>
@@ -54,13 +53,6 @@
 
     <section>
       <h2>Five of My Favorite Things</h2>
-      <!--
-        ***
-        Wrap your answer for at least one favorite thing inside of an <a> tag, linking to a related
-        page (e.g. a wikipedia page of your favorite animal).
-        If you have multiple favorites in a category, try a nested list inside of an <li>!
-        ***
-      -->
       <ul>
         <li><a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank"><strong>Favorite animal:</strong> Golden Retriever!</a></li>
         <li><strong>Favorite movie:</strong> Harry Potter</li>
@@ -76,19 +68,22 @@
           </ol>
         </li>
       </ul>
+      <div id="images">
+        <section>
+          <h3>My Favorite Images:</h3>
+          <h4>Keep clicking to view all images!</h4>
+          <img class="image" id="slideshow" src="cheeku-puppy.jpg" alt="my pet dog Cheeku">
+          <br>
+          <p>Image Source: Ananya Shreya Soni</p>
 
-      <h3>Two pictures that represents when I'm happy:</h3>
-      <img class="image" src="cheeku-puppy.jpg" alt="my pet dog Cheeku">
-      <p>Image Source: Ananya Shreya Soni</p>
-
-      <img class="image" src="cheeku-and-me.jpg" alt="my pet dog Cheeku">
-      <p>Image Source: Ananya Shreya Soni</p>
-      <h3>A picture that represents when I'm sad</h3>
-
-      <img class="image" src="dark-storm.jpg" alt="A dark and stormy day">
-      <p>Image Source: https://wallpapers.com/dark-storm </p>
+          <h3>A picture that represents when I'm sad</h3>
+        </section>
+        <section>
+          <img class="image" id="sad-image" src="dark-storm.jpg" alt="A dark and stormy day">
+          <p>Image Source: https://wallpapers.com/dark-storm </p>
+        </section>
+      </div>
       <h3>One of my favorite quotes</h3>
-
       <article>
         <blockquote>
           <p>
