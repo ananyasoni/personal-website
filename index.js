@@ -1,7 +1,6 @@
 /*
  * Name: Ananya Shreya Soni
  * Date: April 19th, 2024
- * Section: CSE 154 AC
  *
  * This JS file respresents the behavior for my about me page
  * in my website and adds some interactivity. For example,
@@ -72,21 +71,6 @@
   function onMouseLeave(evt) {
     evt.currentTarget.classList.add('button');
     evt.currentTarget.classList.remove('button_hover');
-  }
-
-  /**
-   * after hovering over the second image on my about me
-   * page some text shows up below the caption of the image.
-   * nothing happens after hovering over it once.
-   */
-  function onHover() {
-    if (imgHoverCount <= 0) {
-      let paragraph = document.createElement("p");
-      paragraph.textContent = "touch some grass to feel better ;)";
-      document.getElementById("sad").appendChild(paragraph);
-      imgHoverCount++;
-    }
-
   }
 
 })();
