@@ -1,11 +1,10 @@
 /*
   Ananya Shreya Soni
   March 29th, 2024
-  Section AC TAs:
 
   This file respresents the styling decisions for
   my website. It is used for my resume page and
-  about me page.
+  about me page. The color-theme is shades of purple.
 */
 body {
   background-color: rgb(251, 240, 255);
@@ -22,40 +21,53 @@ p {
   font-style: normal;
 }
 
-header, .button, .banner, figcaption {
+header, .button, .button_hover #banner, figcaption {
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.page-title {
+header > h1 {
   color: rgb(91, 18, 109);
   text-decoration: underline;
 }
 
-#top, #tech-stack, #education, #awards, #work-experience, #projects, #extracurricular, .page-title {
+main > section {
   background-color: #e5d7f6;
   padding: 10px;
   border-radius: 15px;
   white-space: break-space;
 }
 
-.banner {
+#banner {
   padding: 20px;
   background-color: #c09de5;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .image {
-  width: 40%;
+  height: 330px;
   border: 5px solid;
   border-color: rgb(155, 56, 180);
+}
+
+#waka {
   transform: translate(0, 6%);
 }
 
-#stats1, #stats2, #stats3, #stats4, #stats5, #wakatime, .button {
+#stats1, #stats2, #stats3, #stats4, #stats5, #wakatime, .button, .button_hover {
   display: inline-block;
 }
 
 #wakatime, .button {
   background-color: #714ba2;
+}
+
+.button {
   color: rgb(255, 255, 255);
 }
 
@@ -65,15 +77,19 @@ header, .button, .banner, figcaption {
 
 #wakatime {
   background-position-y: center;
-  transform: translate(0, 10%);
 }
 
-.button {
+.button, .button_hover {
   text-decoration: none;
   padding: 9px 20px;
   font-size: 15px;
   cursor: pointer;
   background-position-y: top;
+}
+
+.button_hover {
+  background-color: #C1E1C1;
+  color: rgb(0, 0, 0);
 }
 
 #stats1 {
@@ -91,7 +107,7 @@ header, .button, .banner, figcaption {
   padding: 7px;
 }
 
-#stats3, #wakatime, .button {
+#stats3, #wakatime, .button, .button_hover {
   border-radius: 4px;
 }
 
